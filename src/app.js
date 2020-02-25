@@ -1,6 +1,7 @@
-const app = document.getElementById("app");
-function sayHello() {
-  app.innerHTML = "<h1>Ola dev</h1>";
+import React from 'react';
+
+function App() {
+  return <h1>Ola dev</h1>;
 }
 
-module.exports.sayHello = sayHello;
+export default App;
