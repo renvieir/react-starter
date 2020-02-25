@@ -86,14 +86,25 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/app.js":
+/*!********************!*\
+  !*** ./src/app.js ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const app = document.getElementById(\"app\");\r\nfunction sayHello() {\r\n  app.innerHTML = \"<h1>Ola dev</h1>\";\r\n}\r\n\r\nmodule.exports.sayHello = sayHello;\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("console.log('index');\r\nconst app = document.getElementById(\"app\");\r\napp.innerHTML = \"<h1>Ola dev</h1>\";\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const app = __webpack_require__(/*! ./app */ \"./src/app.js\")\r\nconsole.log('index');\r\napp.sayHello();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
